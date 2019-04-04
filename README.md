@@ -20,9 +20,81 @@ ACTIVIDADES DESARROLLADAS
 9.	Plato: Dar tos los ingredientes que se utilicen para realizar dicho plato sea arroz, lechuga, carne.
 10.	Orden: Tener en cuenta el menú que adicione del día mas un plato sencillo y con bebida que va a ser detallo en la factura.
 
+2. Diagrama de Clases
+
+---------------------------------------------------------------------------------------------------
+     Cliente
+---------------------------------------------------------------------------------------------------
+- nombre : String
+- apellido : String
+- cedula : String
+- telefono : String
+---------------------------------------------------------------------------------------------------
++ agregarCliente(nombre : String, apellido : String, cedula : String, telefono : String) : boolean
++ buscarCliente(cedula:String) : Cliente
++ modificarCliente(nombre : String, apellido : String, cedula : String, telefono : String) : boolean
+---------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+     Empleado
+---------------------------------------------------------------------------------------------------
+- nombre : String
+- cargo : String
+- id : int
+- salario : double
+---------------------------------------------------------------------------------------------------
++ agregarEmpleado(nombre : String, id : int, cargo : String, salario : double) : boolean
++ buscarEmpleado(id : int) : boolean
++ modificarEmpleado(nombre : String, id : int, cargo : String, salario : double) : boolean
++ eliminarEmpleado(id : int) : boolean
+---------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+   Factura
+---------------------------------------------------------------------------------------------------
+- codigo : int
+- fecha : Date
+- total : double
+---------------------------------------------------------------------------------------------------
++ crearFactura(codigo : int, fecha : Date, total : double) : boolean
++ calcularCosto(total : double) : double
++ imprimirFactura( codigo : int ) : Factura 
+---------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+    Menu
+---------------------------------------------------------------------------------------------------
+- nombre : String
+- descripcion: String
+- precio : double
+---------------------------------------------------------------------------------------------------
++ crearMenu(nombre : String, descripcion : String, precio : double) : boolean
++ modificarMenu(nombre : String) : void
++ eliminarMenu(nombre : String) : boolean
+---------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+   Mesa
+---------------------------------------------------------------------------------------------------
+- codigo : int
+- fecha : Date
+- disponible : boolean
+- cantidad : int 
+---------------------------------------------------------------------------------------------------
++ verificarMesa(disponible : boolean) : boolean
++ reservarMesa(codigo : int, fecha : Date, cantidad : int) : boolean
++ cancelarReserva(codigo : int) : boolean
+---------------------------------------------------------------------------------------------------
+    
  
-3.    Clases
+3. Clases
+
 Clase Cliente
+
 public class Cliente {
     
     //Atributos de la clase Cliente
@@ -78,8 +150,12 @@ public class Cliente {
         return false;
     }
 }
+
+
 Clase Empleado
+
 public class Empleado {
+
     //Atributos de la clase Empleado
     private String nombre;
     private String cargo;
@@ -139,7 +215,9 @@ public class Empleado {
     }
     
 }
+
 Clase Factura
+
 public class Factura {
     //Atributos de la clase Factura
     private int codigo;
@@ -188,13 +266,8 @@ public class Factura {
 }
 
 
-
-
-
-
-
-
 Clase Menu
+
 public class Menu {
     
     //Atributos de la clase Menu
@@ -244,13 +317,8 @@ public class Menu {
 }
 
 
-
-
-
-
-
-
 Clase Mesa
+
 public class Mesa {
     
     //Atributos de clase Mesa
@@ -308,9 +376,11 @@ public class Mesa {
         return false;
     }
 }
+
 4. Implementar el método toString() en cada clase:
 
 Metodo toString de Cliente
+
     //toString
      @Override
     public String toString() {
@@ -318,24 +388,31 @@ Metodo toString de Cliente
     }
 
 Metodo toString de Empleado
+
     //toString
     @Override
     public String toString() {
         return "Empleado{" + "nombre=" + nombre + ", cargo=" + cargo + ", id=" + id + ", salario=" + salario + '}';
     }
+    
 Metodo toString de Factura
+
     //toString
     @Override
     public String toString() {
         return "Factura{" + "codigo=" + codigo + ", fecha=" + fecha + ", total=" + total + '}';
     }
+    
 Metodo toString de Menu
+
     //toString
     @Override
     public String toString() {
         return "Menu{" + "nombre=" + nombre + ", descripcion=" + descripcion + ", precio=" + precio + '}';
     }
+    
 Metodo toString de Mesa
+
 //toString
     @Override
     public String toString() {
@@ -344,36 +421,9 @@ Metodo toString de Mesa
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 5.  Programar una clase principal (tipo main) que permita crear un objeto (instanciar) de cada clase referida en el punto anterior, estableciendo/seteando los datos/valores ingresados por el usuario (usando la clase Scanner) y posterior muestre dicha información del objeto en la consola de Netbeans.
  
- 
- 
- 
- 
-6. Crear un repositorio en GitHub y subir el código del proyecto de NetBeans. En el archivo README del repositorio debe constar la misma información del informe de resultados de la práctica que se indica en el siguiente punto.
- 
-
-
-RESULTADO(S) OBTENIDO(S): 
-MAIN
-package ec.edu.ups.restaurante.main;
+ package ec.edu.ups.restaurante.main;
 
 import ec.edu.ups.restaurante.clases.Cliente;
 import ec.edu.ups.restaurante.clases.Empleado;
@@ -659,6 +709,10 @@ public class Main {
     }
     
 }
+ 
+
+RESULTADO(S) OBTENIDO(S): 
+
 Resultados de Consola
 ~~~~~~~Escoga una opcion~~~~~~~
 1. Crear objeto de tipo Cliente
@@ -767,10 +821,10 @@ Mesa{codigo=5, fecha=Mon Mar 04 00:00:00 COT 2019, disponible=false, cantidad=6}
 6. Salir
 -->6
  Gracias
+ 
+ 
 CONCLUSIONES: En esta práctica nos ayudó mucho para entender el get y set y los diferentes métodos de cada clase y tener en cuenta que en algunos métodos se mandan valores(variables).
 RECOMENDACIONES: Tener en cuenta sobre la fecha en Date porque se nos puede complicar un poco cuando no se poner en el formato correcto.
 
 Nombre de estudiante: Domenika Delgado
 
-
-Firma de estudiante:   
