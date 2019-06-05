@@ -839,7 +839,6 @@ Nombre de estudiante: Domenika Delgado
 
 Firma:
 
+![image](https://user-images.githubusercontent.com/49033904/58931275-bf537180-8724-11e9-8441-a08071692c71.png)
 
-
-![9](https://user-images.githubusercontent.com/49033904/58777938-6b5e5680-8585-11e9-9b2e-bdbfd1958f5b.png)
 
