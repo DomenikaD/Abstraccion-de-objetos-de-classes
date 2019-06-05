@@ -709,7 +709,16 @@ public class Main {
     }
     
 }
- 
+
+6. GitHub
+
+Usuario: DomenikaD
+
+Link: https://github.com/DomenikaD/Practica-01--Abstraccion-de-objetos-de-clases
+
+
+![1](https://user-images.githubusercontent.com/49033904/58931136-19a00280-8724-11e9-80fe-410dee70b2af.png)
+
 
 RESULTADO(S) OBTENIDO(S): 
 
@@ -827,4 +836,8 @@ CONCLUSIONES: En esta práctica nos ayudó mucho para entender el get y set y lo
 RECOMENDACIONES: Tener en cuenta sobre la fecha en Date porque se nos puede complicar un poco cuando no se poner en el formato correcto.
 
 Nombre de estudiante: Domenika Delgado
+
+Firma:
+
+![9](https://user-images.githubusercontent.com/49033904/58777938-6b5e5680-8585-11e9-9b2e-bdbfd1958f5b.png)
 
